@@ -1,5 +1,10 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+# Исключим из репозитория папки с картинками
+.idea/
+ 
+# Исключение .map файлов
+*.map
+*.json
+ 
+# gulp
+gulpfile.js
+node_modules
