@@ -88,10 +88,10 @@ h6 {
 
 .header {
   background-color: #fbd5e5;
+  width: 100%;
 }
 
 .header .header-cap {
-  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,13 +126,12 @@ h6 {
 }
 
 .header .header-content {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
