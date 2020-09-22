@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pacifico&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -114,7 +116,7 @@ h6 {
 }
 
 .header .nav-link {
-  width: 130px;
+  width: 120px;
   height: 22px;
   font-size: 16px;
   line-height: 18px;
@@ -158,4 +160,116 @@ h6 {
 
 .header .mint {
   height: 150px;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.container {
+  width: 90%;
+  max-width: 945px;
+  margin: auto;
+}
+
+.container .section-title {
+  text-align: center;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 56px;
+  letter-spacing: 0.3em;
+  color: #ffd700;
+}
+
+.container .section-subtitle {
+  text-align: center;
+  font-family: Libre Caslon Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #808000;
+  margin-bottom: 15px;
+}
+
+.order-img {
+  float: left;
+  width: 20%;
+  display: block;
+  z-index: 2;
+}
+
+.order-img img {
+  float: right;
+}
+
+.how-to-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.order-block {
+  margin-left: -50px;
+  float: left;
+  width: 80%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 6px -4px 30px #fbd5e5, 0px -4px 30px #fbd5e5, inset 0px -6px 30px #b3b184, inset -8px 6px 30px #8fa053;
+          box-shadow: 6px -4px 30px #fbd5e5, 0px -4px 30px #fbd5e5, inset 0px -6px 30px #b3b184, inset -8px 6px 30px #8fa053;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.order-block .order-item {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.order-block .order-image {
+  width: 20%;
+  float: left;
+}
+
+.order-block .order-content {
+  width: 80%;
+  float: left;
+}
+
+.order-block .order-title {
+  font-family: Libre Caslon Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  color: #75bbfd;
+}
+
+.order-block .order-subtitle {
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #bfa100;
+}
+
+.order-block .underline {
+  color: #bfa100;
+  text-decoration: underline;
 }

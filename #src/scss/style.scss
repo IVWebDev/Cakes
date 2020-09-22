@@ -1,4 +1,5 @@
 @import "_sheets.scss";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pacifico&display=swap");
 .header {
    background-color: #fbd5e5;
    width: 100%;
@@ -17,7 +18,7 @@
       margin-top: 30px;
    }
    .nav-link {
-      width: 130px;
+      width: 120px;
       height: 22px;
       font-size: 16px;
       line-height: 18px;
@@ -52,5 +53,95 @@
    }
    .mint {
       height: 150px;
+   }
+}
+section {
+   padding-top: 20px;
+   padding-bottom: 60px;
+}
+.container {
+   width: 90%;
+   max-width: 945px;
+   margin: auto;
+
+   .section-title {
+      text-align: center;
+      font-family: Pacifico;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 56px;
+      letter-spacing: 0.3em;
+      color: #ffd700;
+   }
+   .section-subtitle {
+      text-align: center;
+      font-family: Libre Caslon Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 30px;
+      color: #808000;
+      margin-bottom: 15px;
+   }
+}
+.order-img {
+   float: left;
+   width: 20%;
+   display: block;
+   z-index: 2;
+
+   img {
+      float: right;
+   }
+}
+.how-to-order {
+   display: flex;
+   align-items: flex-end;
+}
+.order-block {
+   margin-left: -50px;
+   float: left;
+   width: 80%;
+   height: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   box-shadow: 6px -4px 30px #fbd5e5, 0px -4px 30px #fbd5e5, inset 0px -6px 30px #b3b184, inset -8px 6px 30px #8fa053;
+   border-radius: 0px 20px 20px 0px;
+
+   .order-item {
+      flex-basis: 35%;
+      margin-top: 20px;
+      margin-left: 10%;
+      margin-right: 5%;
+   }
+   .order-image {
+      width: 20%;
+      float: left;
+   }
+   .order-content {
+      width: 80%;
+      float: left;
+   }
+   .order-title {
+      font-family: Libre Caslon Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 19px;
+      line-height: 23px;
+      color: #75bbfd;
+   }
+   .order-subtitle {
+      font-family: Pacifico;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      color: #bfa100;
+   }
+   .underline {
+      color: #bfa100;
+      text-decoration: underline;
    }
 }
