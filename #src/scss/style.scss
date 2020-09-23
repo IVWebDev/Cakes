@@ -13,26 +13,74 @@
       width: 200px;
       height: 210px;
    }
-   .nav-links {
-      margin-left: 35px;
-      margin-top: 30px;
-   }
-   .nav-link {
-      display: inline-block;
-      width: 120px;
-      height: 22px;
-      font-size: 16px;
-      line-height: 18px;
-      margin-right: 30px;
-      background-color: #fff;
-      text-align: center;
-      border-radius: 12px;
-   }
-   .nav-link a {
-      color: #000;
-   }
-   .nav-link.active {
-      background-color: #d3b7cc;
+   .nav-container {
+      display: flex;
+      justify-content: center;
+      margin: 28px auto;
+
+      .header-nav_wrapper {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         display: flex;
+         box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+         border-radius: 20px;
+         overflow: hidden;
+      }
+      .header-button {
+         padding: 0;
+         border: 0;
+         background-color: transparent;
+         cursor: pointer;
+         display: inline-block;
+         text-align: center;
+         padding: 13px;
+         font-family: Libre Caslon Display;
+         min-width: 100px;
+         font-size: 16px;
+         line-height: 19px;
+         background: #f0f0f0;
+         border-right: 1px solid #fbd5e5;
+         transition: border 0.2s, background 0.2s, color 0.2s;
+      }
+      .header-button.active {
+         background: #d3b7cc;
+         border-color: #d3b7cc;
+      }
+      .header-button:not(.active):hover {
+         background: #75bbfd;
+         border-right-color: #75bbfd;
+      }
+      .header-nav_btn:last-of-type .header-button {
+         border-right: 0;
+      }
+      @media (max-width: 767px) {
+         .header-menu {
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto;
+         }
+         .header-nav_wrapper {
+            flex-wrap: wrap;
+            width: 100%;
+         }
+         .header-nav_btn {
+            width: 50%;
+            flex-grow: 1;
+         }
+         .header-button {
+            min-width: 0;
+            width: 100%;
+            border-top: 1px solid #fbd5e5;
+         }
+         .header-nav_btn:nth-of-type(1) .header-button,
+         .header-nav_btn:nth-of-type(2) .header-button {
+            border-top: 0;
+         }
+         .header-nav_btn:nth-of-type(even) .header-button {
+            border-right: 0;
+         }
+      }
    }
    .header-content {
       align-items: center;
