@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pacifico&display=swap");
 
 * {
@@ -109,7 +111,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #fff;
   z-index: 2;
 }
 
@@ -121,7 +123,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100px;
+  height: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -129,8 +131,8 @@ h6 {
 
 .header-logo {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 80px;
-          flex: 0 0 80px;
+      -ms-flex: 0 0 75px;
+          flex: 0 0 75px;
   position: relative;
   z-index: 3;
 }
@@ -163,13 +165,77 @@ h6 {
   display: none;
 }
 
-.container {
-  padding-top: 100px;
-}
-
 section {
   padding-top: 20px;
   padding-bottom: 60px;
+}
+
+.cap-container {
+  padding-top: 100px;
+  background-color: #fbd5e5;
+  margin: 0;
+}
+
+.cap-container .cap-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.cap-container .cap-title {
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 74px;
+  letter-spacing: 0.1em;
+  color: #ffd700;
+}
+
+.cap-container .cap-description {
+  font-size: 82px;
+  color: #75bbfd;
+}
+
+.cap-container .cap-subtitle {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #808000;
+}
+
+.cap-container .cap-subtitle {
+  /* чтобы линии не выходили за ширину блока заголовка */
+  overflow: hidden;
+}
+
+.cap-container .cap-subtitle:before,
+.cap-container .cap-subtitle:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 1px;
+  background: #6b8e23;
+  margin: 10px;
+}
+
+.cap-container .cap-subtitle:before {
+  margin-left: -100%;
+}
+
+.cap-container .cap-subtitle:after {
+  /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+      ** благодаря этому линия встает справа от текста
+      */
+  margin-right: -100%;
+}
+
+.cap-container .mint {
+  height: 150px;
 }
 
 .container {
@@ -341,13 +407,13 @@ section {
   }
 
   .header-body {
-    height: 60px;
+    height: 50px;
   }
 
   .header-logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50px;
-            flex: 0 0 50px;
+        -ms-flex: 0 0 45px;
+            flex: 0 0 45px;
   }
 
   .header-burger {
@@ -438,7 +504,7 @@ section {
     font-size: 24px;
   }
 
-  .container {
+  .cap-container {
     padding-top: 50px;
   }
 
