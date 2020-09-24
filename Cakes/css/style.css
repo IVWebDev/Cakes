@@ -89,8 +89,8 @@ h6 {
 }
 
 .header {
-  background-color: #fbd5e5;
-  width: 100%;
+  background: #fbd5e5;
+  min-width: 100%;
 }
 
 .header .header-cap {
@@ -114,9 +114,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 28px auto;
 }
 

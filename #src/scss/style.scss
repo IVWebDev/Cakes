@@ -1,8 +1,8 @@
 @import "_sheets.scss";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pacifico&display=swap");
 .header {
-   background-color: #fbd5e5;
-   width: 100%;
+   background: #fbd5e5;
+   min-width: 100%;
 
    .header-cap {
       display: flex;
@@ -15,7 +15,7 @@
    }
    .nav-container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       margin: 28px auto;
 
       .header-nav_wrapper {
