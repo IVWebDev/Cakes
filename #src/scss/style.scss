@@ -38,10 +38,6 @@
 .header-logo img {
    max-width: 100%;
 }
-.header-burger {
-}
-.header-menu {
-}
 .header-list {
    display: flex;
    position: relative;
@@ -174,7 +170,6 @@ section {
       color: #808000;
    }
    .cap-subtitle {
-      /* чтобы линии не выходили за ширину блока заголовка */
       overflow: hidden;
    }
    .cap-subtitle:before,
@@ -191,9 +186,6 @@ section {
       margin-left: -100%;
    }
    .cap-subtitle:after {
-      /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
-      ** благодаря этому линия встает справа от текста
-      */
       margin-right: -100%;
    }
 
@@ -246,7 +238,6 @@ section {
    margin-left: -50px;
    float: left;
    width: 80%;
-   height: 200px;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -288,6 +279,7 @@ section {
       text-decoration: underline;
    }
 }
+
 .design {
    margin-top: 28px;
    display: flex;
