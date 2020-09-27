@@ -346,6 +346,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
 }
 
 .design .design-nav_wrapper {
@@ -392,6 +393,37 @@ section {
 
 .design .design-nav_btn:last-of-type .design-button {
   border-right: 0;
+}
+
+.catalog {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog .catalog-item {
+  width: calc(100% / 3);
+  margin-bottom: 20px;
+}
+
+.catalog .product-img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 250px;
+}
+
+.order-form {
+  width: 80%;
+  height: 250px;
+  border: 3px solid #d3b7cc;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
 @media (max-width: 767px) {
