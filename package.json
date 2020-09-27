@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Сборка gulp",
   "main": "index.html",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-webp-css": "^1.1.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
