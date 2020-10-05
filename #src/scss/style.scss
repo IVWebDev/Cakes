@@ -1,5 +1,8 @@
 @import "_sheets.scss";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pacifico&display=swap");
+html {
+   scroll-behavior: smooth;
+}
 //--header
 .header-container {
    max-width: 1180px;
@@ -359,9 +362,7 @@ section {
       flex-wrap: wrap;
       margin: 0 auto;
    }
-   .catalog-body.active {
-      display: flex;
-   }
+
    #wedding {
       display: none;
       flex-wrap: wrap;
