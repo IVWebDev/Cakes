@@ -21,10 +21,32 @@ $(document).ready(function () {
       $('body').toggleClass('lock');
    });
 });
-
-//catalog
-$('.catalog-button').click(function () {
-   $('.catalog-button').removeClass('active');
+//catalog-menu
+$(".catalog-button").click(function (e) {
+   e.preventDefault();
+   $(".catalog-button").removeClass('active');
    $(this).addClass('active');
+});
+//catalog
+$(function () {
+
+   let filter = $("[data-filter]");
+   filter.on("click", function () {
+      let cat = $(this).data('filter');
+      if (cat == 'all') {
+         $("[data-cat]").removeClass('hide');
+      } else {
+         $("[data-cat]").each(function () {
+
+            let workCat = $(this).data('cat');
+
+            if (workCat != cat) {
+               $(this).addClass('hide');
+            } else {
+               $(this).removeClass('hide');
+            }
+         });
+      }
+   });
 });
 

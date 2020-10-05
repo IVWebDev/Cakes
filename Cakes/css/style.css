@@ -401,83 +401,12 @@ section {
 
 .catalog {
   width: 100%;
-}
-
-.catalog .catalog-body {
-  display: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.catalog #wedding {
-  display: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-  background: yellow;
-}
-
-.catalog #wedding:target {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.catalog #child {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  background: green;
-  display: none;
-}
-
-.catalog #child:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.catalog #corporate {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-  background: red;
-  display: none;
-}
-
-.catalog #corporate:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.catalog #woman {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-  background: blue;
-  display: none;
-}
-
-.catalog #woman:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.catalog #man {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-  background: #800060;
-  display: none;
-}
-
-.catalog #man:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .catalog .catalog-item {
@@ -491,6 +420,10 @@ section {
   width: 80%;
   height: 250px;
   border-radius: 5px;
+}
+
+.hide {
+  display: none;
 }
 
 .application-form {

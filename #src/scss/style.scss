@@ -356,58 +356,10 @@ section {
 
 .catalog {
    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
 
-   .catalog-body {
-      display: none;
-      flex-wrap: wrap;
-      margin: 0 auto;
-   }
-
-   #wedding {
-      display: none;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      background: yellow;
-   }
-   #wedding:target {
-      display: flex;
-   }
-   #child {
-      flex-wrap: wrap;
-      margin: 0 auto;
-      background: green;
-      display: none;
-   }
-   #child:target {
-      display: flex;
-   }
-   #corporate {
-      flex-wrap: wrap;
-      margin: 0 auto;
-      background: red;
-      display: none;
-   }
-   #corporate:target {
-      display: flex;
-   }
-   #woman {
-      flex-wrap: wrap;
-      margin: 0 auto;
-      background: blue;
-      display: none;
-   }
-   #woman:target {
-      display: flex;
-   }
-   #man {
-      flex-wrap: wrap;
-      margin: 0 auto;
-      background: rgb(128, 0, 96);
-      display: none;
-   }
-   #man:target {
-      display: flex;
-   }
    .catalog-item {
       width: calc(100% / 3);
       margin-bottom: 20px;
@@ -419,6 +371,9 @@ section {
       height: 250px;
       border-radius: 5px;
    }
+}
+.hide {
+   display: none;
 }
 .application-form {
    width: 80%;
