@@ -280,13 +280,13 @@ section {
    }
 }
 
-.design {
+.catalog-header {
    margin-top: 28px;
    display: flex;
    justify-content: center;
    margin-bottom: 40px;
 
-   .design-nav_wrapper {
+   .catalog-nav_wrapper {
       list-style: none;
       margin: 0;
       padding: 0;
@@ -295,7 +295,7 @@ section {
       border-radius: 20px;
       overflow: hidden;
    }
-   .design-button {
+   .catalog-button {
       padding: 0;
       border: 0;
       background-color: transparent;
@@ -311,51 +311,102 @@ section {
       border-right: 1px solid #fbd5e5;
       transition: border 0.2s, background 0.2s, color 0.2s;
    }
-   .design-button.active {
+   .catalog-button.active {
       background: #d3b7cc;
       border-color: #d3b7cc;
    }
-   .design-button:not(.active):hover {
+   .catalog-button:not(.active):hover {
       background: #75bbfd;
       border-right-color: #75bbfd;
    }
-   .design-nav_btn:last-of-type .design-button {
+   .catalog-nav_btn:last-of-type .catalog-button {
       border-right: 0;
    }
    @media (max-width: 767px) {
-      .design-menu {
+      .catalog-menu {
          width: 500px;
          max-width: 100%;
          margin: 0 auto;
       }
-      .design-nav_wrapper {
+      .catalog-nav_wrapper {
          flex-wrap: wrap;
          width: 100%;
       }
-      .design-nav_btn {
+      .catalog-nav_btn {
          width: 50%;
          flex-grow: 1;
       }
-      .design-button {
+      .catalog-button {
          min-width: 0;
          width: 100%;
          border-top: 1px solid #fbd5e5;
       }
-      .design-nav_btn:nth-of-type(1) .design-button,
-      .design-nav_btn:nth-of-type(2) .design-button {
+      .catalog-nav_btn:nth-of-type(1) .catalog-button,
+      .catalog-nav_btn:nth-of-type(2) .catalog-button {
          border-top: 0;
       }
-      .design-nav_btn:nth-of-type(even) .design-button {
+      .catalog-nav_btn:nth-of-type(even) .catalog-button {
          border-right: 0;
       }
    }
 }
+
 .catalog {
    width: 100%;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
 
+   .catalog-body {
+      display: none;
+      flex-wrap: wrap;
+      margin: 0 auto;
+   }
+   .catalog-body.active {
+      display: flex;
+   }
+   #wedding {
+      display: none;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      background: yellow;
+   }
+   #wedding:target {
+      display: flex;
+   }
+   #child {
+      flex-wrap: wrap;
+      margin: 0 auto;
+      background: green;
+      display: none;
+   }
+   #child:target {
+      display: flex;
+   }
+   #corporate {
+      flex-wrap: wrap;
+      margin: 0 auto;
+      background: red;
+      display: none;
+   }
+   #corporate:target {
+      display: flex;
+   }
+   #woman {
+      flex-wrap: wrap;
+      margin: 0 auto;
+      background: blue;
+      display: none;
+   }
+   #woman:target {
+      display: flex;
+   }
+   #man {
+      flex-wrap: wrap;
+      margin: 0 auto;
+      background: rgb(128, 0, 96);
+      display: none;
+   }
+   #man:target {
+      display: flex;
+   }
    .catalog-item {
       width: calc(100% / 3);
       margin-bottom: 20px;

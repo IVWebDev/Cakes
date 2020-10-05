@@ -21,3 +21,10 @@ $(document).ready(function () {
       $('body').toggleClass('lock');
    });
 });
+
+//catalog
+$('.catalog-button').click(function () {
+   $('.catalog-button').removeClass('active');
+   $(this).addClass('active');
+});
+

@@ -338,7 +338,7 @@ section {
   text-decoration: underline;
 }
 
-.design {
+.catalog-header {
   margin-top: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,7 +349,7 @@ section {
   margin-bottom: 40px;
 }
 
-.design .design-nav_wrapper {
+.catalog-header .catalog-nav_wrapper {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -362,7 +362,7 @@ section {
   overflow: hidden;
 }
 
-.design .design-button {
+.catalog-header .catalog-button {
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -381,28 +381,105 @@ section {
   transition: border 0.2s, background 0.2s, color 0.2s;
 }
 
-.design .design-button.active {
+.catalog-header .catalog-button.active {
   background: #d3b7cc;
   border-color: #d3b7cc;
 }
 
-.design .design-button:not(.active):hover {
+.catalog-header .catalog-button:not(.active):hover {
   background: #75bbfd;
   border-right-color: #75bbfd;
 }
 
-.design .design-nav_btn:last-of-type .design-button {
+.catalog-header .catalog-nav_btn:last-of-type .catalog-button {
   border-right: 0;
 }
 
 .catalog {
   width: 100%;
+}
+
+.catalog .catalog-body {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.catalog .catalog-body.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.catalog #wedding {
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
+  background: yellow;
+}
+
+.catalog #wedding:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog #child {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  background: green;
+  display: none;
+}
+
+.catalog #child:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog #corporate {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  background: red;
+  display: none;
+}
+
+.catalog #corporate:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog #woman {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  background: blue;
+  display: none;
+}
+
+.catalog #woman:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog #man {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  background: #800060;
+  display: none;
+}
+
+.catalog #man:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .catalog .catalog-item {
@@ -553,37 +630,37 @@ section {
     padding-top: 50px;
   }
 
-  .design .design-menu {
+  .catalog-header .catalog-menu {
     width: 500px;
     max-width: 100%;
     margin: 0 auto;
   }
 
-  .design .design-nav_wrapper {
+  .catalog-header .catalog-nav_wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
   }
 
-  .design .design-nav_btn {
+  .catalog-header .catalog-nav_btn {
     width: 50%;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
 
-  .design .design-button {
+  .catalog-header .catalog-button {
     min-width: 0;
     width: 100%;
     border-top: 1px solid #fbd5e5;
   }
 
-  .design .design-nav_btn:nth-of-type(1) .design-button,
-  .design .design-nav_btn:nth-of-type(2) .design-button {
+  .catalog-header .catalog-nav_btn:nth-of-type(1) .catalog-button,
+  .catalog-header .catalog-nav_btn:nth-of-type(2) .catalog-button {
     border-top: 0;
   }
 
-  .design .design-nav_btn:nth-of-type(even) .design-button {
+  .catalog-header .catalog-nav_btn:nth-of-type(even) .catalog-button {
     border-right: 0;
   }
 }
