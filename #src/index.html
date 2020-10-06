@@ -31,6 +31,7 @@
    </header>
    <!-- /.header -->
    <main>
+      <!-- Cap  -->
       <section class="cap">
          <div class="cap-container">
             <div class="cap-content">
@@ -41,6 +42,7 @@
             <img src="img/mint.png" alt="Mint" class="mint">
          </div>
       </section>
+      <!-- Order -->
       <section class="order-section">
          <div class="container">
             <h2 class="section-title">Как заказать</h2>
@@ -89,11 +91,12 @@
             </div>
          </div>
       </section>
+      <!-- Catalog -->
       <section class="catalog-section">
          <div class="container">
             <div class="section-title">Выберите дизайн</div>
             <div class="section-subtitle">какие торты мы выпекаем</div>
-            <nav class="catalog-header">
+            <div class="catalog-header">
                <div class="catalog-menu">
                   <ul class="catalog-nav_wrapper">
                      <li class="catalog-nav_btn"><button class="catalog-button active" type="button"
@@ -114,10 +117,9 @@
                      <li class="catalog-nav_btn"><button class="catalog-button" type="button"
                            data-filter="wedding">Свадебные</button>
                      </li>
-
                   </ul>
                </div>
-            </nav>
+            </div>
             <div class="catalog">
                <div class="catalog-item" data-cat="wedding">
                   <div class="product">
@@ -131,7 +133,9 @@
                </div>
                <div class="catalog-item">
                   <div class="product">
-                     <a href=""> <img src="img/5.jpg" class="product-img" alt="#"></a>
+                     <div class="application-form"><img src="img/svgCake.png" alt="" class="application-img"><button
+                           class="application-button" type="button">Отправить заявку</button>
+                     </div>
                   </div>
                </div>
                <div class="catalog-item" data-cat="corporate">
@@ -152,11 +156,36 @@
             </div>
          </div>
       </section>
-      <!-- /.order-section -->
+      <section class="filling">
+         <div class="container">
+            <div class="section-title">Выберите начинку</div>
+            <div class="section-subtitle">15 фантастичесских вкуса</div>
+            <div class="filling-header">
+               <div class="filling-menu">
+                  <ul class="filling-nav_wrapper">
+                     <li class="filling-nav_btn"><button class="filling-button active" type="button"
+                           data-filter="all">Все</button>
+                     </li>
+                     <li class="filling-nav_btn"><button class="filling-button" type="button"
+                           data-filter="chocolate">Шоколадные</button>
+                     </li>
+                     <li class="filling-nav_btn"><button class="filling-button" type="button"
+                           data-filter="fruits">Фруктовые</button>
+                     </li>
+                     <li class="filling-nav_btn"><button class="filling-button" type="button"
+                           data-filter="classic">Классичесские</button>
+                     </li>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
    </main>
    <!-- /main -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+   <script src="js/script.js"></script>
+
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="js/script.js"></script>
 
 </html>
