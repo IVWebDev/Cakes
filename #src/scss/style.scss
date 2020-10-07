@@ -73,6 +73,7 @@
       width: 30px;
       height: 20px;
       z-index: 3;
+      margin-right: 15px;
    }
    .header-burger span {
       position: absolute;
@@ -215,7 +216,7 @@ section {
       font-size: 24px;
       line-height: 30px;
       color: #808000;
-      margin-bottom: 15px;
+      margin-bottom: 28px;
    }
 }
 .order-img {
@@ -277,119 +278,147 @@ section {
       text-decoration: underline;
    }
 }
+.catalog-section {
+   padding: 1.5rem;
+}
+:root {
+   --black: #3a3a3a;
+   --white: #fff;
+   --green: #49b293;
+}
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
 
-.catalog-header {
+ol {
+   list-style: none;
+}
+
+h1 {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+h1 a {
+   transition: all 0.1s;
+}
+
+h1 a:hover {
+   background: var(--green);
+   color: var(--white);
+}
+
+input[type="radio"] {
+   position: absolute;
+   left: -9999px;
+}
+
+/* FILTERS
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.filter-heading {
    margin-top: 28px;
    display: flex;
    justify-content: center;
    margin-bottom: 40px;
-
-   .catalog-nav_wrapper {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
-      border-radius: 20px;
-      overflow: hidden;
-   }
-   .catalog-button {
-      padding: 0;
-      border: 0;
-      background-color: transparent;
-      cursor: pointer;
-      display: inline-block;
-      text-align: center;
-      padding: 13px;
-      font-family: Libre Caslon Display;
-      min-width: 100px;
-      font-size: 12px;
-      line-height: 14px;
-      background: #f0f0f0;
-      border-right: 1px solid #fbd5e5;
-      transition: border 0.2s, background 0.2s, color 0.2s;
-   }
-   .catalog-button.active {
-      background: #d3b7cc;
-      border-color: #d3b7cc;
-   }
-   .catalog-button:not(.active):hover {
-      background: #75bbfd;
-      border-right-color: #75bbfd;
-   }
-   .catalog-nav_btn:last-of-type .catalog-button {
-      border-right: 0;
-   }
-   @media (max-width: 767px) {
-      .catalog-menu {
-         width: 500px;
-         max-width: 100%;
-         margin: 0 auto;
-      }
-      .catalog-nav_wrapper {
-         flex-wrap: wrap;
-         width: 100%;
-      }
-      .catalog-nav_btn {
-         width: 50%;
-         flex-grow: 1;
-      }
-      .catalog-button {
-         min-width: 0;
-         width: 100%;
-         border-top: 1px solid #fbd5e5;
-      }
-      .catalog-nav_btn:nth-of-type(1) .catalog-button,
-      .catalog-nav_btn:nth-of-type(2) .catalog-button {
-         border-top: 0;
-      }
-      .catalog-nav_btn:nth-of-type(even) .catalog-button {
-         border-right: 0;
-      }
-   }
 }
-
-.catalog {
-   width: 100%;
+.filter-wrapper {
+   list-style: none;
+   margin: 0;
+   padding: 0;
    display: flex;
-   flex-wrap: wrap;
-   margin: 0 auto;
-
-   .catalog-item {
-      width: calc(100% / 3);
-      margin-bottom: 20px;
-   }
-   .product-img {
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      height: 250px;
-      border-radius: 5px;
-   }
+   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+   border-radius: 20px;
+   overflow: hidden;
 }
-.hide {
-   display: none;
+.filters {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.application-form {
-   width: 80%;
-   height: 250px;
-   border: 3px solid #d3b7cc;
-   transform: rotate(5deg);
-}
-.application-img {
-   text-align: center;
-   position: relative;
-   left: 25%;
-}
-.application-button {
+.filters label {
+   padding: 0;
+   border: 0;
    background-color: transparent;
    cursor: pointer;
    display: inline-block;
    text-align: center;
-   padding: 10px;
+   padding: 13px;
    font-family: Libre Caslon Display;
    min-width: 100px;
    font-size: 12px;
    line-height: 14px;
-   background: #d3b7cc;
+   background: #f0f0f0;
+   border-right: 1px solid #fbd5e5;
+   transition: border 0.2s, background 0.2s, color 0.2s;
+}
+
+.filters label:hover {
+   background: #75bbfd;
+   border-right-color: #75bbfd;
+}
+/* FILTERED ELEMENTS (POSTS)
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.posts {
+   display: grid;
+   grid-gap: 1.5rem;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.posts .post {
+   background: #fafafa;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.posts .post-title {
+   font-size: 1.3rem;
+}
+
+.posts .post-title:hover {
+   text-decoration: underline;
+}
+
+.posts figcaption {
+   padding: 1rem;
+}
+
+/* FILTERING RULES
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="all-design"]:checked ~ .filters [for="all-design"],
+[value="wedding"]:checked ~ .filters [for="wedding"],
+[value="kids"]:checked ~ .filters [for="kids"],
+[value="woman"]:checked ~ .filters [for="woman"],
+[value="man"]:checked ~ .filters [for="man"] {
+   background: var(--green);
+   color: var(--white);
+}
+
+[value="all-design"]:checked ~ .posts [data-category] {
+   display: block;
+}
+
+[value="wedding"]:checked ~ .posts .post:not([data-category~="wedding"]),
+[value="kids"]:checked ~ .posts .post:not([data-category~="kids"]),
+[value="woman"]:checked ~ .posts .post:not([data-category~="woman"]),
+[value="man"]:checked ~ .posts .post:not([data-category~="man"]) {
+   display: none;
+}
+/* MQ
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 900px) {
+   .posts {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media screen and (max-width: 650px) {
+   html {
+      font-size: 14px;
+   }
+
+   .posts {
+      grid-template-columns: repeat(2, 1fr);
+   }
 }

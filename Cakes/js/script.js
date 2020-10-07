@@ -22,31 +22,31 @@ $(document).ready(function () {
    });
 });
 //catalog-menu
-$(".catalog-button").click(function (e) {
-   e.preventDefault();
-   $(".catalog-button").removeClass('active');
-   $(this).addClass('active');
-});
+// $('label').click(function (e) {
+//    e.preventDefault();
+//    $('label').removeClass('active');
+//    $(this).addClass('active');
+// });
 //catalog
-$(function () {
+// $(function () {
 
-   let filter = $("[data-filter]");
-   filter.on("click", function () {
-      let cat = $(this).data('filter');
-      if (cat == 'all') {
-         $("[data-cat]").removeClass('hide');
-      } else {
-         $("[data-cat]").each(function () {
+//    let filter = $("[data-filter]");
+//    filter.on("click", function () {
+//       let cat = $(this).data('filter');
+//       if (cat == 'all') {
+//          $("[data-cat]").removeClass('hide');
+//       } else {
+//          $("[data-cat]").each(function () {
 
-            let workCat = $(this).data('cat');
+//             let workCat = $(this).data('cat');
 
-            if (workCat != cat) {
-               $(this).addClass('hide');
-            } else {
-               $(this).removeClass('hide');
-            }
-         });
-      }
-   });
-});
+//             if (workCat != cat) {
+//                $(this).addClass('hide');
+//             } else {
+//                $(this).removeClass('hide');
+//             }
+//          });
+//       }
+//    });
+// });
 
