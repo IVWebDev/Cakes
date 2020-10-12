@@ -470,6 +470,11 @@ input[type="radio"] {
   padding: 1rem;
 }
 
+.posts img {
+  width: 100%;
+  height: 100%;
+}
+
 /* FILTERING RULES
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

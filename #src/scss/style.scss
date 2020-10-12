@@ -383,7 +383,10 @@ input[type="radio"] {
 .posts figcaption {
    padding: 1rem;
 }
-
+.posts img {
+   width: 100%;
+   height: 100%;
+}
 /* FILTERING RULES
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 [value="all-design"]:checked ~ .filters [for="all-design"],
