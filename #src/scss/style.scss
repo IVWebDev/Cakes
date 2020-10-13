@@ -387,7 +387,7 @@ input[type="radio"] {
    width: 100%;
    height: 100%;
 }
-/* FILTERING RULES
+/*DESIGN-FILTERING RULES
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 [value="all-design"]:checked ~ .filters [for="all-design"],
 [value="wedding"]:checked ~ .filters [for="wedding"],
@@ -408,6 +408,25 @@ input[type="radio"] {
 [value="man"]:checked ~ .posts .post:not([data-category~="man"]) {
    display: none;
 }
+/*FILLING-FILTERING RULES
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="all-filling"]:checked ~ .filters [for="all-filling"],
+[value="chocolate"]:checked ~ .filters [for="chocolate"],
+[value="fruit"]:checked ~ .filters [for="fruit"],
+[value="classic"]:checked ~ .filters [for="classic"] {
+   background: var(--green);
+   color: var(--white);
+}
+
+[value="all-filling"]:checked ~ .posts [data-category] {
+   display: block;
+}
+
+[value="chocolate"]:checked ~ .posts .post:not([data-category~="chocolate"]),
+[value="fruit"]:checked ~ .posts .post:not([data-category~="fruit"]),
+[value="classic"]:checked ~ .posts .post:not([data-category~="classic"]) {
+   display: none;
+}
 /* MQ
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 900px) {
@@ -424,4 +443,10 @@ input[type="radio"] {
    .posts {
       grid-template-columns: repeat(2, 1fr);
    }
+}
+// review-section
+.review-section {
+   width: 100%;
+   height: 400px;
+   background-color: rgba(211, 183, 204, 0.5);
 }
