@@ -524,8 +524,41 @@ input[type="radio"] {
 
 .review-section {
   width: 100%;
-  height: 400px;
   background-color: rgba(211, 183, 204, 0.5);
+}
+
+.review-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.review-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #808000;
+}
+
+.review-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
 }
 
 @media screen and (max-width: 900px) {
