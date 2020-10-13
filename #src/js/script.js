@@ -15,11 +15,12 @@ testWebP(function (support) {
       document.querySelector('body').classList.add('no-webp');
    }
 });
-$(document).ready(function () {
-   $('.header-burger').click(function (event) {
-      $('.header-burger,.header-menu').toggleClass('active');
-      $('body').toggleClass('lock');
-   });
+// Review slider
+var swiper = new Swiper('.swiper-container', {
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
 });
 //catalog-menu
 // $('label').click(function (e) {
