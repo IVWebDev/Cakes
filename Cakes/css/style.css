@@ -525,7 +525,7 @@ input[type="radio"] {
 .review-section {
   width: 100%;
   background-color: rgba(211, 183, 204, 0.5);
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .review-slide {
@@ -576,6 +576,78 @@ input[type="radio"] {
 .swiper-button-next {
   color: #000000;
   margin: 0 auto;
+}
+
+.aboutUs-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.aboutUs-block .aboutUs-title {
+  font-size: 32px;
+  line-height: 56px;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.aboutUs-block .aboutUs-subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.aboutUs-block .aboutUs-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.aboutUs-block .social-links {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutUs-block .social-link {
+  margin-right: 16px;
+}
+
+.aboutUs-block .aboutUs-images-2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutUs-block .aboutUs-img-3 {
+  margin-left: 15px;
+  -webkit-transform: matrix(1, 0.09, -0.1, 1, 0, 0);
+      -ms-transform: matrix(1, 0.09, -0.1, 1, 0, 0);
+          transform: matrix(1, 0.09, -0.1, 1, 0, 0);
+}
+
+.cap-footer {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/footer.png);
 }
 
 @media screen and (max-width: 900px) {
@@ -697,3 +769,5 @@ input[type="radio"] {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.webp .cap-footer{ background-image: url(../img/footer.webp); }
