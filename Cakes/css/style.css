@@ -612,8 +612,6 @@ input[type="radio"] {
 }
 
 .aboutUs-block .social-links {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,7 +621,7 @@ input[type="radio"] {
 }
 
 .aboutUs-block .social-link {
-  margin-right: 16px;
+  width: 70px;
 }
 
 .aboutUs-block .aboutUs-images-2 {
@@ -644,10 +642,14 @@ input[type="radio"] {
           transform: matrix(1, 0.09, -0.1, 1, 0, 0);
 }
 
-.cap-footer {
+.footer {
   width: 100%;
-  height: 400px;
-  background-image: url(../img/footer.png);
+}
+
+.cap-footer {
+  height: 300px;
+  background: url(../img/icons/icon.svg#footer) no-repeat;
+  background-size: 100%;
 }
 
 @media screen and (max-width: 900px) {
@@ -769,5 +771,3 @@ input[type="radio"] {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-.webp .cap-footer{ background-image: url(../img/footer.webp); }
