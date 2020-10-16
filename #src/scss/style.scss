@@ -536,9 +536,10 @@ input[type="radio"] {
    width: 100%;
 
    .cap-footer {
-      height: 300px;
+      height: 550px;
       background: url(../img/icons/icon.svg#footer) no-repeat;
       background-size: 100%;
+      position: relative;
    }
    .footer-block {
       width: 100%;
@@ -552,5 +553,70 @@ input[type="radio"] {
       font-weight: normal;
       font-size: 18px;
       line-height: 20px;
+   }
+}
+// form
+.form {
+   position: absolute;
+   top: 50px;
+   background: #ffffff;
+   width: 350px;
+   height: 450px;
+
+   .form-title {
+      text-align: center;
+      font-family: Pacifico;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 56px;
+      letter-spacing: 0.1em;
+      color: #ffd700;
+      margin-bottom: 12px;
+   }
+
+   .form-content {
+      padding-left: 27px;
+   }
+   .form-subtitle {
+      font-family: Pacifico;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 5px;
+   }
+   .input {
+      width: 130px;
+      height: 30px;
+      border: 1px solid #000000;
+      font-family: Libre Caslon Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.1em;
+      color: rgba(0, 0, 0, 0.35);
+      margin-bottom: 10px;
+   }
+   .input-description::placeholder {
+   }
+   .input-name {
+      margin-right: 30px;
+   }
+   .input-description {
+      width: 295px;
+      height: 233px;
+   }
+   .form-button {
+      background: #d3b7cc;
+      width: 130px;
+      height: 30px;
+      font-family: Libre Caslon Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 27px;
    }
 }

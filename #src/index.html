@@ -333,7 +333,22 @@
       </section>
    </main>
    <footer class="footer">
-      <div class="cap-footer"></div>
+      <div class="cap-footer">
+         <div class="container">
+            <form action="mail.php" method="POST" class="form">
+               <div class="form-title">Оставить заявку</div>
+               <div class="form-content">
+                  <div class="form-subtitle">Как с вами связаться?</div>
+                  <input type="text" placeholder="Имя" class="input input-name">
+                  <input type="text" placeholder="Телефон" class="input input-phone">
+                  <div class="form-subtitle">Напишите коментарий</div>
+                  <input type="text" placeholder="Какой дизайн, вес, начинка торта, дата торжества?"
+                     class="input input-description">
+               </div>
+               <input type="button" value="Отправить заявку" class="button form-button">
+            </form>
+         </div>
+      </div>
       <div class="startEnd-container">
          <div class="footer-block">
             <div class="footer-content">
