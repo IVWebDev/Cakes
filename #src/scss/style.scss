@@ -1,6 +1,29 @@
 @import "_sheets.scss";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pacifico&display=swap");
+// logo
+.logo {
+   flex: 0 0 150px;
+   position: relative;
+   z-index: 3;
 
+   .logo img {
+      max-width: 100%;
+   }
+}
+// social links
+.social-links {
+   display: flex;
+   align-items: center;
+
+   .social-link {
+      width: 70px;
+   }
+}
+// header & footer container
+.startEnd-container {
+   max-width: 95%;
+   margin: 0 auto;
+}
 //--header
 
 .header {
@@ -20,10 +43,6 @@
    background-color: #fbd5e5;
    z-index: 2;
 }
-.header-container {
-   max-width: 1180px;
-   margin: 0 auto;
-}
 .header-body {
    position: relative;
    display: flex;
@@ -31,14 +50,7 @@
    height: 80px;
    align-items: center;
 }
-.header-logo {
-   flex: 0 0 75px;
-   position: relative;
-   z-index: 3;
-}
-.header-logo img {
-   max-width: 100%;
-}
+
 .header-list {
    display: flex;
    position: relative;
@@ -510,13 +522,6 @@ input[type="radio"] {
       font-size: 16px;
       line-height: 20px;
    }
-   .social-links {
-      display: flex;
-      align-items: center;
-   }
-   .social-link {
-      width: 70px;
-   }
    .aboutUs-images-2 {
       flex-basis: 50%;
       display: flex;
@@ -529,9 +534,23 @@ input[type="radio"] {
 }
 .footer {
    width: 100%;
-}
-.cap-footer {
-   height: 300px;
-   background: url(../img/icons/icon.svg#footer) no-repeat;
-   background-size: 100%;
+
+   .cap-footer {
+      height: 300px;
+      background: url(../img/icons/icon.svg#footer) no-repeat;
+      background-size: 100%;
+   }
+   .footer-block {
+      width: 100%;
+      height: auto;
+   }
+   .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 20px;
+   }
 }
