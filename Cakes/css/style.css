@@ -650,6 +650,8 @@ input[type="radio"] {
 
 .footer {
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .footer .cap-footer {
@@ -898,6 +900,24 @@ input[type="radio"] {
 
   .header-link {
     font-size: 24px;
+  }
+
+  .order-title {
+    font-family: Libre Caslon Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    color: black;
+  }
+
+  .order-subtitle {
+    font-family: Pacifico;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: #bfa100;
   }
 }
 
