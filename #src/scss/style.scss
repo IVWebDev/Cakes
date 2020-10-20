@@ -527,6 +527,11 @@ input[type="radio"] {
       display: flex;
       justify-content: space-between;
    }
+   .aboutUs-img {
+      height: 250px;
+      width: 250px;
+      background-size: cover;
+   }
    .aboutUs-img-3 {
       margin-left: 15px;
       transform: matrix(1, 0.09, -0.1, 1, 0, 0);
@@ -590,23 +595,30 @@ input[type="radio"] {
       width: 130px;
       height: 30px;
       border: 1px solid #000000;
-      font-family: Libre Caslon Display;
+
       font-style: normal;
       font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 10px;
+   }
+   input::placeholder {
+      font-family: Libre Caslon Display;
+      white-space: pre-wrap;
+      color: rgba(0, 0, 0, 0.35);
       font-size: 14px;
       line-height: 17px;
       letter-spacing: 0.1em;
-      color: rgba(0, 0, 0, 0.35);
-      margin-bottom: 10px;
    }
    .input-description::placeholder {
    }
    .input-name {
+      text-align: start;
       margin-right: 30px;
    }
    .input-description {
       width: 295px;
-      height: 233px;
+      height: 200px;
    }
    .form-button {
       background: #d3b7cc;

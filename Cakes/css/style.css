@@ -635,6 +635,12 @@ input[type="radio"] {
           justify-content: space-between;
 }
 
+.aboutUs-block .aboutUs-img {
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+}
+
 .aboutUs-block .aboutUs-img-3 {
   margin-left: 15px;
   -webkit-transform: matrix(1, 0.09, -0.1, 1, 0, 0);
@@ -711,23 +717,66 @@ input[type="radio"] {
   width: 130px;
   height: 30px;
   border: 1px solid #000000;
-  font-family: Libre Caslon Display;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.1em;
-  color: rgba(0, 0, 0, 0.35);
+  font-size: 16px;
+  line-height: 19px;
   margin-bottom: 10px;
 }
 
+.form input::-webkit-input-placeholder {
+  font-family: Libre Caslon Display;
+  white-space: pre-wrap;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.form input::-moz-placeholder {
+  font-family: Libre Caslon Display;
+  white-space: pre-wrap;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.form input:-ms-input-placeholder {
+  font-family: Libre Caslon Display;
+  white-space: pre-wrap;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.form input::-ms-input-placeholder {
+  font-family: Libre Caslon Display;
+  white-space: pre-wrap;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.form input::placeholder {
+  font-family: Libre Caslon Display;
+  white-space: pre-wrap;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
 .form .input-name {
+  text-align: start;
   margin-right: 30px;
 }
 
 .form .input-description {
   width: 295px;
-  height: 233px;
+  height: 200px;
 }
 
 .form .form-button {
