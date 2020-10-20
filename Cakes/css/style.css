@@ -588,7 +588,7 @@ input[type="radio"] {
 .swiper-button-prev,
 .swiper-button-next {
   color: #000000;
-  margin: 0 auto;
+  right: 0;
 }
 
 .aboutUs-block {
@@ -901,23 +901,37 @@ input[type="radio"] {
   .header-link {
     font-size: 24px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .review-wrapper {
+    width: 80px !important;
+  }
 
   .order-title {
-    font-family: Libre Caslon Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 23px;
-    color: black;
+    font-size: 16px !important;
+    line-height: 19px !important;
   }
 
   .order-subtitle {
-    font-family: Pacifico;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 13px !important;
+    line-height: 17px !important;
     color: #bfa100;
+  }
+
+  .review-title {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .review-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
