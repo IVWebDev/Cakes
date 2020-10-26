@@ -216,9 +216,14 @@ section {
   font-style: normal;
   font-weight: normal;
   font-size: 62px;
-  line-height: 74px;
+  line-height: 110px;
   letter-spacing: 0.1em;
   color: #ffd700;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #bfa100), color-stop(57%, #ecc700), to(#ffd700));
+  background: -o-linear-gradient(top, #bfa100 33%, #ecc700 57%, #ffd700);
+  background: linear-gradient(180deg, #bfa100 33%, #ecc700 57%, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cap-container .cap-description {
@@ -274,6 +279,11 @@ section {
   line-height: 56px;
   letter-spacing: 0.3em;
   color: #ffd700;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(53%, #bfa100), color-stop(66%, #ecc700), to(#ffd700));
+  background: -o-linear-gradient(top, #bfa100 53%, #ecc700 66%, #ffd700);
+  background: linear-gradient(180deg, #bfa100 53%, #ecc700 66%, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container .section-subtitle {
