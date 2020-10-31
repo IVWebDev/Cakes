@@ -332,8 +332,8 @@ section {
 }
 
 .order-block .order-image {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
 }
 
 .order-block .order-content {
@@ -343,8 +343,6 @@ section {
 
 .order-block .order-title {
   font-family: Libre Caslon Display;
-  font-style: normal;
-  font-weight: normal;
   font-size: 19px;
   line-height: 23px;
   color: #75bbfd;
@@ -352,8 +350,6 @@ section {
 
 .order-block .order-subtitle {
   font-family: Pacifico;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 25px;
   color: #bfa100;
@@ -382,22 +378,6 @@ img {
 
 ol {
   list-style: none;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-h1 a {
-  -webkit-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
-}
-
-h1 a:hover {
-  background: var(--green);
-  color: var(--white);
 }
 
 input[type="radio"] {
@@ -479,7 +459,7 @@ input[type="radio"] {
 }
 
 .posts .post {
-  background: #fafafa;
+  background: #49b293;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -496,8 +476,8 @@ input[type="radio"] {
 }
 
 .posts img {
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 250px;
 }
 
 /*DESIGN-FILTERING RULES
@@ -649,6 +629,10 @@ input[type="radio"] {
   line-height: 20px;
 }
 
+.aboutUs-block .aboutUs-img-1 {
+  max-width: 100%;
+}
+
 .aboutUs-block .aboutUs-images-2 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -675,16 +659,14 @@ input[type="radio"] {
 
 .footer {
   max-width: 100%;
-  top: 0;
-  left: 0;
 }
 
 .footer .cap-footer {
-  height: 500px;
+  min-height: 550px;
   background: skyblue;
-  background-size: 100%;
   position: relative;
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 
 .footer .footer-block {
@@ -752,22 +734,18 @@ input[type="radio"] {
 }
 
 .form {
-  position: absolute;
-  top: 10%;
-  left: 15%;
+  margin: auto;
   background: #ffffff;
-  max-width: 350px;
-  width: 25%;
+  width: 500px;
+  max-width: 70%;
   padding-bottom: 10px;
 }
 
 .form .form-title {
   text-align: center;
   font-family: Pacifico;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 56px;
+  font-size: 24px;
+  line-height: 46px;
   letter-spacing: 0.1em;
   color: #ffd700;
   margin-bottom: 12px;
@@ -842,24 +820,44 @@ input[type="radio"] {
 
 .form .input-name {
   text-align: start;
-  margin-right: 30px;
+  margin-right: 10%;
 }
 
 .form .input-description {
   width: 95%;
-  height: 200px;
+  height: 250px;
+}
+
+.form .form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Libre Caslon Display;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .form .form-button {
   background: #d3b7cc;
-  width: 130px;
-  height: 30px;
-  font-family: Libre Caslon Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  margin-left: 27px;
+  margin-left: 35px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.form .send-foto-button {
+  background: transparent;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.form .send-foto-button .dotted {
+  border-bottom: 1px dotted #000;
 }
 
 @media (max-width: 990px) {
@@ -1014,7 +1012,6 @@ input[type="radio"] {
   }
 
   .order-item {
-    width: 100%;
     margin-top: 32px !important;
     margin-left: 0 !important;
   }
@@ -1024,18 +1021,12 @@ input[type="radio"] {
   }
 
   .order-title {
-    font-family: Libre Caslon Display;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px !important;
     line-height: 18px !important;
     color: #75bbfd;
   }
 
   .order-subtitle {
-    font-family: Pacifico;
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px !important;
     line-height: 16px !important;
     color: #bfa100;
@@ -1202,5 +1193,24 @@ input[type="radio"] {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .form-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .button {
+    width: 87%;
+  }
+
+  .form-button {
+    margin-left: 0 !important;
+  }
+
+  .send-foto-button {
+    margin-right: 0 !important;
   }
 }
