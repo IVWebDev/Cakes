@@ -101,16 +101,16 @@ section {
       font-size: 62px;
       line-height: 82px;
       letter-spacing: 0.1em;
-      color: #ffd700;
+      color: #6e2340;
    }
    .cap-description {
       font-size: 82px;
-      color: #75bbfd;
+      color: #313c67;
    }
    .cap-subtitle {
       margin-top: 20px;
       font-size: 24px;
-      color: #808000;
+      color: #553b3d;
    }
    .cap-subtitle {
       overflow: hidden;
@@ -122,7 +122,7 @@ section {
       vertical-align: middle;
       width: 10%;
       height: 1px;
-      background: #6b8e23;
+      background: #553b3d;
       margin: 10px;
    }
    .cap-subtitle:before {
@@ -150,7 +150,7 @@ section {
       font-size: 32px;
       line-height: 56px;
       letter-spacing: 0.3em;
-      color: #ffd700;
+      color: #6e2340;
       // background: linear-gradient(180deg, #bfa100 53%, #ecc700 66%, #ffd700);
       // -webkit-background-clip: text;
       // -webkit-text-fill-color: transparent;
@@ -162,7 +162,7 @@ section {
       font-weight: normal;
       font-size: 24px;
       line-height: 30px;
-      color: #808000;
+      color: #553b3d;
       margin-bottom: 28px;
    }
 }
@@ -206,10 +206,10 @@ section {
       font-family: Pacifico;
       font-size: 14px;
       line-height: 25px;
-      color: #bfa100;
+      color: #2d375f;
    }
    .underline {
-      color: #bfa100;
+      color: #2d375f;
       text-decoration: underline;
    }
 }
@@ -309,7 +309,7 @@ input[type="radio"] {
 }
 
 .posts .post {
-   background: #49b293;
+   background: #fbd5e5;
    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -486,7 +486,7 @@ input[type="radio"] {
 
    .cap-footer {
       min-height: 550px;
-      background: skyblue;
+      background: #fbd5e5;
       position: relative;
       margin-bottom: 10px;
       padding-top: 30px;
@@ -540,7 +540,7 @@ input[type="radio"] {
       font-size: 24px;
       line-height: 46px;
       letter-spacing: 0.1em;
-      color: #ffd700;
+      color: #6e2340;
       margin-bottom: 12px;
    }
    .form-content {
