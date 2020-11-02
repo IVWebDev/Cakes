@@ -22,6 +22,17 @@ $(document).ready(function () {
       $('.header-burger,.header-menu').toggleClass('active');
       $('body').toggleClass('lock');
    });
+   // Catalog slider
+   $('.catalog-label').click(function () {
+      $('.catalog-label').removeClass('active');
+      $(this).toggleClass('active');
+   });
+   // Filling slider
+   $('.filling-label').click(function () {
+      $('.filling-label').removeClass('active');
+      $(this).toggleClass('active');
+   });
+
 });
 
 

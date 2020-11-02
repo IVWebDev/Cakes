@@ -312,8 +312,8 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 6px -4px 30px #fbd5e5, 0px -4px 30px #fbd5e5, inset 0px -6px 30px #b3b184, inset -8px 6px 30px #8fa053;
-          box-shadow: 6px -4px 30px #fbd5e5, 0px -4px 30px #fbd5e5, inset 0px -6px 30px #b3b184, inset -8px 6px 30px #8fa053;
+  -webkit-box-shadow: 0px 0px 60px rgba(200, 68, 179, 0.25);
+          box-shadow: 0px 0px 60px rgba(200, 68, 179, 0.25);
   border-radius: 0px 20px 20px 0px;
 }
 
@@ -444,9 +444,16 @@ input[type="radio"] {
   transition: border 0.2s, background 0.2s, color 0.2s;
 }
 
+.filters label.active {
+  background: #6e2340;
+  border-right-color: #6e2340;
+  color: #fff;
+}
+
 .filters label:hover {
-  background: #75bbfd;
-  border-right-color: #75bbfd;
+  background: #6e2340;
+  border-right-color: #6e2340;
+  color: #fff;
 }
 
 /* FILTERED ELEMENTS (POSTS)
